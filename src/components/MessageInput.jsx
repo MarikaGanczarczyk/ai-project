@@ -17,7 +17,7 @@ export default function MessageInput({ onSend }) {
         onChange={e => setInput(e.target.value)} 
         placeholder="Type a message..."
       />
-      <button onClick={handleSend}>Send</button>
+      <button onClick={handleSend}></button>
     </div>
   );
 }
