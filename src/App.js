@@ -58,13 +58,15 @@ function App() {
  
   return (
     <div className="app">
-      <h1>AI WhatsApp Agent</h1>
+      <div className='chat-container'>
+      <div className='chat-title'><h1>AI WhatsApp Agent</h1></div>
       <ChatWindow messages={messages} />
       <MessageInput onSend={handleSend} />
       <button onClick={generateSummary} disabled={loading}>
         {loading ? "Generating..." : "Generate Summary"}
       </button>
       <SummaryBox summary={summary} />
+      </div>
     </div>
   );
 }
